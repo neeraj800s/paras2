@@ -17,7 +17,7 @@ const AdminContacts = () => {
             }
 
             try {
-                const response = await fetch('http://localhost:5000/api/contacts', {
+                const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contacts`, {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
