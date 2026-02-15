@@ -1,0 +1,172 @@
+.admin-dashboard-page {
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+.admin-header {
+    background: #1e293b;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.admin-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.admin-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.admin-badge {
+    background: #3b82f6;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.logo-section h1 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+}
+
+.admin-logout-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.admin-logout-btn:hover {
+    background: #ef4444;
+    border-color: #ef4444;
+}
+
+.admin-dashboard-content {
+    padding: 2rem 0;
+}
+
+.contacts-stats {
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 200px;
+}
+
+.stat-label {
+    color: #64748b;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.stat-value {
+    color: #1e293b;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contacts-table-wrapper {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.contacts-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.contacts-table th {
+    background: #f1f5f9;
+    padding: 1rem;
+    text-align: left;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #475569;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.contacts-table td {
+    padding: 1rem;
+    font-size: 0.875rem;
+    color: #1e293b;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.message-cell {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.delete-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: #fee2e2;
+    color: #ef4444;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.delete-btn:hover {
+    background: #ef4444;
+    color: white;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.2rem;
+    color: #64748b;
+}
+
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 0 1rem;
+    }
+
+    .contacts-table-wrapper {
+        overflow-x: auto;
+    }
+}
