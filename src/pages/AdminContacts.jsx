@@ -54,7 +54,7 @@ const AdminContacts = () => {
 
         const token = localStorage.getItem('adminToken');
         try {
-            const response = await fetch(`http://localhost:5000/api/contacts/${id}`, {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contacts/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${token}`
