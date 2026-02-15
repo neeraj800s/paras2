@@ -9,6 +9,7 @@ import ServiceAreas from './pages/ServiceAreas';
 import Contact from './pages/Contact';
 import AdminLogin from './pages/AdminLogin';
 import AdminContacts from './pages/AdminContacts';
+import FloatingCTA from './components/FloatingCTA';
 import './index.css';
 
 function App() {
@@ -49,6 +50,9 @@ function App() {
 
             {/* Show standard Footer only on NON-ADMIN pages */}
             {!isAdminPage && <Footer />}
+
+            {/* Floating 24/7 CTA only on NON-ADMIN pages */}
+            {!isAdminPage && <FloatingCTA />}
         </div>
     );
 }

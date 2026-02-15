@@ -8,7 +8,7 @@
     min-height: 90vh;
     display: flex;
     align-items: center;
-    overflow: hidden;
+    overflow-x: hidden;
     padding: 4rem 0;
 }
 
@@ -120,8 +120,16 @@
     z-index: 10;
     white-space: nowrap;
     width: max-content;
-    /* Move around animation */
+    /* Move around animation - Only on PC */
     animation: moveAround 15s linear infinite;
+}
+
+@media (max-width: 968px) {
+    .hero-badge {
+        animation: none !important;
+        display: none !important;
+        /* Hide as per user request */
+    }
 }
 
 @keyframes moveAround {
@@ -150,7 +158,8 @@
         left: -2%;
     }
 }
-.nss{
+
+.nss {
     color: #999 !important;
 }
 
@@ -263,10 +272,12 @@
     border: 1px solid #777 !important;
     border-radius: 15px;
     height: 290px;
-    width: 390px;
+    width: 100%;
+    max-width: 390px;
 }
-.nss2{
-    padding-left:15px ;
+
+.nss2 {
+    padding-left: 15px;
     padding-right: 15px;
 }
 
@@ -465,6 +476,12 @@
     .service-areas-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    .why-choose-card {
+        max-width: 100%;
+        height: auto;
+        padding: 2rem 1rem;
     }
 }
 

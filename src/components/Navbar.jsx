@@ -25,7 +25,7 @@ const Navbar = () => {
     ];
 
     const handleCall = () => {
-        window.location.href = 'tel:8740840483';
+        window.location.href = 'tel:+918740840493';
     };
 
     return (
@@ -34,7 +34,7 @@ const Navbar = () => {
                 <div className="navbar-content">
                     <Link to="/" className="navbar-brand" onClick={() => setIsMobileMenuOpen(false)}>
                         <div className="brand-icon">
-                            <img src='/logo3.png'/>
+                            <img src='/logo3.png' />
                         </div>
                         <div className="brand-text">
                             <span className="brand-name">PARAS HOME HEALTH</span>
